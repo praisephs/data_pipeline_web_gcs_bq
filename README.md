@@ -2,14 +2,13 @@
 ![Add a heading](https://github.com/krissemmy/Data-Pipeline-Web-GCS-BQ/assets/119800888/2228cec5-7887-4660-b2cc-e30e6f481645)
 
 ## Overview
-• An Extract and Load pipeline that gets NYC Green taxi data from DataTalks GitHub Repo,
-loads it into GCS Bucket and transfer the data from the GCS Bucket to a BigQuery Table.
+• A data ingestion and transformation pipeline is in place to retrieve New York City Green taxi data from the DataTalks GitHub Repository, followed by the loading of this data into a Google Cloud Storage (GCS) Bucket. Subsequently, the data is seamlessly transferred from the GCS Bucket to a BigQuery Table.
 
-• It is scheduled to run monthly and will get the corresponding months data.
+• This pipeline operates on a scheduled monthly basis, ensuring that it fetches and processes data corresponding to the current month.
 
-• Built using the GCS Hook and GCS_To_BigQuery Operator
+• The entire infrastructure is constructed using the GCS Hook and the GCS_To_BigQuery Operator for streamlined data handling.
 
-• The data pipeline is built in a Docker container and executed with Celery executor so it gives room for scalability.
+• Notably, the data pipeline is encapsulated within a Docker container, enabling execution through the Celery executor. This setup is designed to provide scalability, accommodating increased data volumes and workloads as needed.
 ![Alt text](image.png)
 ## Setup (official)
 
